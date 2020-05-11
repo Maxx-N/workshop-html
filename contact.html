@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <form action="send_contact" method="post">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="person_lastname">Nom</label>
+                    </td>
+                    <td>
+                        <input type="text" name="lastname" id="person_lastname" required />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="person_firstname">Prénom</label>
+                    </td>
+                    <td>
+                        <input type="text" name="firstname" id="person_firstname" required />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="person_email">Email</label>
+                    </td>
+                    <td>
+                        <input type="text" name="email" id="person_email" required />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="person_tel">Téléphone</label>
+                    </td>
+                    <td>
+                        <input type="text" name="tel" id="person_tel" required />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="person_channel">Canal de contact préféré</label>
+                    </td>
+                    <td>
+                        <select name="channel" id="person_channel" multiple required>
+                            <option value="email">Email</option>
+                            <option value="tel">Téléphone</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="person_message">Message</label>
+                    </td>
+                    <td>
+                        <textarea name="message" id="person_message">
+                        </textarea>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="submit">Envoyer mes informations</button>
+
+    </form>
+</body>
+</html>
