@@ -1,0 +1,73 @@
+﻿body {
+    background-color: #D47B78;
+    color: #5E2322;
+    background-image: url("images/venise.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: comfortaaRegular;
+}
+
+@font-face {
+    font-family: "comfortaaRegular";
+    src: url("comfortaa.ttf");
+}
+
+a {
+    color: #7B0E0A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    a:hover {
+        color: #AB3E3A;
+    }
+
+.thumbnail {
+    width: 10%;
+}
+
+.quarter {
+    width: 25%;
+}
+
+#navbar {
+    padding: 0;
+}
+
+.title {
+    text-align: center;
+}
+
+.card {
+    background-color: rgba(215,231,242,0.5);
+    color: #5E2322;
+    padding: 3%;
+    margin: 2%;
+    text-align: justify;
+}
+
+.horizontalList{
+    display: flex;
+    flex-wrap: wrap;
+    /*width: 100%;*/
+    justify-content: space-around;
+}
+
+.horizontalList li {
+    display: block;
+}
+
+#mainTitle {
+    font-size: 5em;
+    text-align: center;
+    border: 10px solid #5E2322;
+    padding: 2%;
+}
+
+footer {
+    text-align: center;
+    border: 5px solid #5E2322;
+    background-color: rgba(215,231,242,0.5);
+}
