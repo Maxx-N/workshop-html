@@ -7,21 +7,23 @@
     <link href="../style.css" rel="stylesheet" />
 </head>
 <body>
-    <header><h1 id="mainTitle">La Florentina</h1></header>
-    <nav class="card" id="navbar">
-        <h2 class="title">Pizzeria</h2>
-        <p>
-            <ul class="horizontalList">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="liste_pizzas.html">Nos pizzas</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </p>
-    </nav>
+    <header class="sticky-top">
+        <h1 id="mainTitle">La Florentina</h1>
+        <nav class="card" id="navbar">
+            <h2 class="title">Pizzeria</h2>
+            <p>
+                <ul class="horizontalList">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="liste_pizzas.html">Nos pizzas</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </p>
+        </nav>
+    </header>
     <main>
         <table class="card">
             <thead>
-                <tr>
+                <tr class="menu">
                     <th>Id.</th>
                     <th>Libellé</th>
                     <th>Référence</th>
@@ -30,21 +32,21 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr class="menu">
                     <td>1</td>
                     <td>Reine</td>
                     <td>PREI</td>
                     <td>9,99 €</td>
                     <td><img src="../images/reine.jpg" alt="Pizza Reine" class="thumbnail" /></td>
                 </tr>
-                <tr>
+                <tr class="menu">
                     <td>2</td>
                     <td>Regina</td>
                     <td>PREG</td>
                     <td>9,00 €</td>
                     <td><img src="../images/regina.jpg" alt="Pizza Regina" class="thumbnail" /></td>
                 </tr>
-                <tr>
+                <tr class="menu">
                     <td>3</td>
                     <td>Napolitaine</td>
                     <td>PNAP</td>
@@ -52,21 +54,21 @@
                     <td><img src="../images/napolitaine.jpg" alt="Pizza Napolitaine" class="thumbnail" /></td>
 
                 </tr>
-                <tr>
+                <tr class="menu">
                     <td>4</td>
                     <td>4 fromages</td>
                     <td>P4FR</td>
                     <td>9,99 €</td>
                     <td><img src="../images/4fromages.jpg" alt="Pizza 4 fromages" class="thumbnail" /></td>
                 </tr>
-                <tr>
+                <tr class="menu">
                     <td>5</td>
                     <td>Chorizo</td>
                     <td>PCHO</td>
                     <td>9,99 €</td>
                     <td><img src="../images/chorizo.jpg" alt="Pizza Chorizo" class="thumbnail" /></td>
                 </tr>
-                <tr>
+                <tr class="menu">
                     <td>6</td>
                     <td>4 saisons</td>
                     <td>P4SA</td>
@@ -77,5 +79,12 @@
             </tbody>
         </table>
     </main>
+    <footer>
+        <p>
+            Copyright La Florentina - Tous droits réservés
+            <br />
+            <a href="#">Nous contacter</a>
+        </p>
+    </footer>
 </body>
 </html>

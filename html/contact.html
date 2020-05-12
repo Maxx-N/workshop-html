@@ -7,20 +7,22 @@
     <link href="../style.css" rel="stylesheet" />
 </head>
 <body>
-    <header><h1 id="mainTitle">La Florentina</h1></header>
-    <nav class="card" id="navbar">
-        <h2 class="title">Pizzeria</h2>
-        <p>
-            <ul class="horizontalList">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="liste_pizzas.html">Nos pizzas</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </p>
-    </nav>
+    <header class="sticky-top">
+        <h1 id="mainTitle">La Florentina</h1>
+        <nav class="card" id="navbar">
+            <h2 class="title">Pizzeria</h2>
+            <p>
+                <ul class="horizontalList">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="liste_pizzas.html">Nos pizzas</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </p>
+        </nav>
+    </header>
     <form action="../send_contact" method="post">
         <table class="card">
-            <tbody>
+            <tbody class="table">
                 <tr>
                     <td>
                         <label for="person_lastname">Nom</label>
@@ -84,5 +86,12 @@
         <button type="submit">Envoyer mes informations</button>
 
     </form>
+    <footer>
+        <p>
+            Copyright La Florentina - Tous droits réservés
+            <br />
+            <a href="#">Nous contacter</a>
+        </p>
+    </footer>
 </body>
 </html>
