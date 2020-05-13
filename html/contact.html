@@ -8,9 +8,11 @@
 </head>
 <body>
     <header class="sticky-top">
-        <h1 id="mainTitle">La Florentina</h1>
-        <nav class="card" id="navbar">
-            <h2 class="title">Pizzeria</h2>
+        <div id="title">
+            <h1 id="mainTitle">La Florentina <img src="../images/italia.jpg" alt="ItalianFlag" class="miniature" /></h1>
+            <h2>Pizzeria</h2>
+        </div>
+        <nav id="navbar" class="card">
             <p>
                 <ul class="horizontalList">
                     <li><a href="index.html">Accueil</a></li>
@@ -20,72 +22,75 @@
             </p>
         </nav>
     </header>
-    <form action="../send_contact" method="post">
-        <table class="card">
-            <tbody class="table">
-                <tr>
-                    <td>
-                        <label for="person_lastname">Nom</label>
-                    </td>
-                    <td>
-                        <input type="text" name="lastname" id="person_lastname" required />
-                    </td>
-                </tr>
+    <main>
+        <form action="../send_contact" method="post">
+            <div class="contactTableAndButton">
+                <table class="card">
+                    <tbody class="contact">
+                        <tr>
+                            <td>
+                                <label for="person_lastname">Nom</label>
+                            </td>
+                            <td>
+                                <input type="text" name="lastname" id="person_lastname" required />
+                            </td>
+                        </tr>
 
-                <tr>
-                    <td>
-                        <label for="person_firstname">Prénom</label>
-                    </td>
-                    <td>
-                        <input type="text" name="firstname" id="person_firstname" required />
-                    </td>
-                </tr>
+                        <tr>
+                            <td>
+                                <label for="person_firstname">Prénom</label>
+                            </td>
+                            <td>
+                                <input type="text" name="firstname" id="person_firstname" required />
+                            </td>
+                        </tr>
 
-                <tr>
-                    <td>
-                        <label for="person_email">Email</label>
-                    </td>
-                    <td>
-                        <input type="text" name="email" id="person_email" required />
-                    </td>
-                </tr>
+                        <tr>
+                            <td>
+                                <label for="person_email">Email</label>
+                            </td>
+                            <td>
+                                <input type="text" name="email" id="person_email" required />
+                            </td>
+                        </tr>
 
-                <tr>
-                    <td>
-                        <label for="person_tel">Téléphone</label>
-                    </td>
-                    <td>
-                        <input type="text" name="tel" id="person_tel" required />
-                    </td>
-                </tr>
+                        <tr>
+                            <td>
+                                <label for="person_tel">Téléphone</label>
+                            </td>
+                            <td>
+                                <input type="text" name="tel" id="person_tel" required />
+                            </td>
+                        </tr>
 
-                <tr>
-                    <td>
-                        <label for="person_channel">Canal de contact préféré</label>
-                    </td>
-                    <td>
-                        <select name="channel" id="person_channel" multiple required>
-                            <option value="email">Email</option>
-                            <option value="tel">Téléphone</option>
-                        </select>
-                    </td>
-                </tr>
+                        <tr>
+                            <td>
+                                <label for="person_channel">Canal de contact préféré</label>
+                            </td>
+                            <td>
+                                <select name="channel" id="person_channel" multiple required>
+                                    <option value="email">Email</option>
+                                    <option value="tel">Téléphone</option>
+                                </select>
+                            </td>
+                        </tr>
 
-                <tr>
-                    <td>
-                        <label for="person_message">Message</label>
-                    </td>
-                    <td>
-                        <textarea name="message" id="person_message">
+                        <tr>
+                            <td>
+                                <label for="person_message">Message</label>
+                            </td>
+                            <td>
+                                <textarea name="message" id="person_message">
                         </textarea>
 
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <button type="submit">Envoyer mes informations</button>
-
-    </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="submit">Envoyer mes informations</button>
+            </div>
+        </form>
+    </main>
     <footer>
         <p>
             Copyright La Florentina - Tous droits réservés

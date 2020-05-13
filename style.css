@@ -36,27 +36,41 @@ a {
     width: 100%;
 }
 
+.miniature {
+    width: 5%;
+}
+
 .third {
     width: 33%;
 }
 
-#mainTitle {
-    font-size: 6em;
-    text-align: center;
-    border: 10px solid #5E2322;
-    padding: 0;
-    width: 100%;
-    margin: 0;
-}
-
 #navbar {
     padding: 0;
-    background-color: rgb(215,231,242)
+    background-color: rgb(215,231,242);
 }
 
 header {
     width: 100%;
 }
+
+#mainTitle {
+    font-size: 6em;
+    /*text-align: center;*/
+    /*border: 10px solid #5E2322;*/
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+    #title h2 {
+        align-self: center;
+    }
 
 .title {
     text-align: center;
@@ -105,8 +119,31 @@ th {
     text-align: center;
 }
 
+.contact tr td {
+    width: 100%;
+}
+
 footer {
     text-align: center;
     border: 5px solid #5E2322;
     background-color: rgba(215,231,242,0.5);
+}
+
+button {
+    text-align: center;
+    background-color: #D47B78;
+    color: #5E2322;
+}
+
+    button:hover {
+        background-color: #5E2322;
+        color: #D47B78;
+    }
+
+
+
+.contactTableAndButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
